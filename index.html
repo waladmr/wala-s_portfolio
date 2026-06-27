@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wala Yousfi — Technicien en  Génie Mécanique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">AB<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#experience">Expériences</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="cv.pdf" download class="btn-nav">Télécharger CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas id="blueprintCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <img src="photo.jpg" alt="Wala Yousfi" class="hero-photo" onerror="this.style.display='none'; document.querySelector('.photo-placeholder').style.display='flex';" />
+        <div class="photo-placeholder">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="30" r="16" stroke="#2D6BE4" stroke-width="2"/>
+            <path d="M10 72c0-16.569 13.431-30 30-30s30 13.431 30 30" stroke="#2D6BE4" stroke-width="2"/>
+          </svg>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-eyebrow">Technicien en  en Génie Mécanique</p>
+        <h1 class="hero-name">Wala<br /><span>Yousfi</span></h1>
+        <p class="hero-tagline">Conception • Simulation • Innovation</p>
+        <div class="hero-actions">
+          <a href="#projets" class="btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn-outline">Me contacter</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://linkedin.com/in/votre-profil" target="_blank" aria-label="LinkedIn" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/votre-profil" target="_blank" aria-label="GitHub" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="mailto:Wala.benali@email.com" aria-label="Email" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="hero-scroll-hint" aria-label="Scroll">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label reveal">01 — À propos</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">Passionné par<br />la mécanique des structures</h2>
+          <p>Technicien en  en génie mécanique diplômé, je me spécialise dans la conception assistée par ordinateur, la simulation numérique et l'analyse des structures. Mon parcours m'a permis de maîtriser les outils industriels de référence tout en développant une approche rigoureuse de la résolution de problèmes complexes.</p>
+          <p>Je suis particulièrement intéressé par les applications de simulation par éléments finis, l'optimisation topologique et les matériaux composites.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Ans d'expérience</span></div>
+            <div class="stat"><span class="stat-num">8+</span><span class="stat-label">Projets réalisés</span></div>
+            <div class="stat"><span class="stat-num">6+</span><span class="stat-label">Logiciels maîtrisés</span></div>
+          </div>
+        </div>
+        <div class="about-visual reveal">
+          <div class="blueprint-card">
+            <div class="bp-grid"></div>
+            <div class="bp-content">
+              <div class="bp-line"><span>Nom</span><span>Wala Yousfi</span></div>
+              <div class="bp-line"><span>Spécialité</span><span>Génie Mécanique</span></div>
+              <div class="bp-line"><span>Localisation</span><span>Tunis, Tunisie</span></div>
+              <div class="bp-line"><span>Disponibilité</span><span>Immédiate</span></div>
+              <div class="bp-line"><span>Langues</span><span>FR / AR / EN</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMATION -->
+  <section class="section section-dark" id="formation">
+    <div class="container">
+      <div class="section-label reveal">02 — Formation</div>
+      <h2 class="section-title reveal">Parcours académique</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2020 — 2023</div>
+          <div class="timeline-card">
+            <h3>Diplôme d'Technicien en Génie Mécanique</h3>
+            <p class="timeline-school">École Nationale d'Technicien en s de Tunis (ENIT)</p>
+            <p>Spécialisation en conception mécanique et simulation numérique. Mention Bien. Projet de fin d'études sur l'optimisation des structures par éléments finis.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2018 — 2020</div>
+          <div class="timeline-card">
+            <h3>Classes Préparatoires aux Grandes Écoles</h3>
+            <p class="timeline-school">Institut Préparatoire aux Études d'Technicien en  de Tunis (IPEIT)</p>
+            <p>Filière Mathématiques-Physique-Sciences de l'Technicien en  (MPSI/MP). Formation intensive en mathématiques, physique et sciences industrielles.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2018</div>
+          <div class="timeline-card">
+            <h3>Baccalauréat Sciences Techniques</h3>
+            <p class="timeline-school">Lycée Technique, Tunis</p>
+            <p>Mention Très Bien. Major de promotion en mathématiques et sciences physiques.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-label reveal">03 — Expériences</div>
+      <h2 class="section-title reveal">Stages & expériences professionnelles</h2>
+      <div class="experience-grid">
+
+        <div class="exp-card reveal">
+          <div class="exp-header">
+            <div>
+              <h3>Stage de Projet de Fin d'Études</h3>
+              <p class="exp-company">Société Tunisienne de l'Électricité et du Gaz (STEG)</p>
+            </div>
+            <span class="exp-badge">Fév — Juin 2023</span>
+          </div>
+          <p>Analyse par éléments finis des contraintes mécaniques dans les conduites sous pression. Modélisation 3D sous SolidWorks et simulation sous ANSYS. Rédaction d'un rapport technique complet avec recommandations.</p>
+          <div class="exp-tags">
+            <span>ANSYS</span><span>SolidWorks</span><span>Éléments Finis</span><span>Rapport technique</span>
+          </div>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-header">
+            <div>
+              <h3>Stage Technicien</h3>
+              <p class="exp-company">Société Mécanique de Précision — Sfax</p>
+            </div>
+            <span class="exp-badge">Juil — Août 2022</span>
+          </div>
+          <p>Participation à la conception et au dimensionnement de pièces mécaniques sur CATIA V5. Suivi de production en atelier : usinage, tournage, fraisage. Contrôle qualité et métrologie.</p>
+          <div class="exp-tags">
+            <span>CATIA V5</span><span>Usinage</span><span>Métrologie</span><span>Contrôle qualité</span>
+          </div>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-header">
+            <div>
+              <h3>Stage d'Initiation</h3>
+              <p class="exp-company">Bureau d'Études Mécaniques — Tunis</p>
+            </div>
+            <span class="exp-badge">Juil — Août 2021</span>
+          </div>
+          <p>Initiation à la conception assistée par ordinateur avec AutoCAD. Lecture et production de plans techniques. Participation aux réunions de projet et à la rédaction de cahiers des charges.</p>
+          <div class="exp-tags">
+            <span>AutoCAD</span><span>Plans techniques</span><span>Cahier des charges</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETENCES -->
+  <section class="section section-dark" id="competences">
+    <div class="container">
+      <div class="section-label reveal">04 — Compétences</div>
+      <h2 class="section-title reveal">Outils & technologies</h2>
+      <div class="skills-wrapper">
+        <div class="skills-category reveal">
+          <h3 class="skills-cat-title">Conception CAO</h3>
+          <div class="skills-list">
+            <div class="skill-item"><span class="skill-name">SolidWorks</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+            <div class="skill-item"><span class="skill-name">CATIA V5</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+            <div class="skill-item"><span class="skill-name">AutoCAD</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+          </div>
+        </div>
+        <div class="skills-category reveal">
+          <h3 class="skills-cat-title">Simulation & MEF</h3>
+          <div class="skills-list">
+            <div class="skill-item"><span class="skill-name">ANSYS Mechanical</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Abaqus</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+            <div class="skill-item"><span class="skill-name">ANSYS Fluent (CFD)</span><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div>
+          </div>
+        </div>
+        <div class="skills-category reveal">
+          <h3 class="skills-cat-title">Calcul & Programmation</h3>
+          <div class="skills-list">
+            <div class="skill-item"><span class="skill-name">MATLAB</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Excel / VBA</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+          </div>
+        </div>
+        <div class="skills-category reveal">
+          <h3 class="skills-cat-title">Soft Skills</h3>
+          <div class="soft-skills">
+            <span>Travail en équipe</span>
+            <span>Gestion de projet</span>
+            <span>Rigueur analytique</span>
+            <span>Communication technique</span>
+            <span>Résolution de problèmes</span>
+            <span>Adaptabilité</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section class="section" id="projets">
+    <div class="container">
+      <div class="section-label reveal">05 — Projets</div>
+      <h2 class="section-title reveal">Réalisations & projets</h2>
+      <div class="projects-grid">
+
+        <div class="project-card project-featured reveal">
+          <div class="project-badge">Projet de Fin d'Études</div>
+          <h3>Analyse et Optimisation des Structures par Éléments Finis</h3>
+          <p>Modélisation et simulation numérique des contraintes mécaniques dans des conduites industrielles sous pression. Application de la méthode des éléments finis pour l'optimisation du dimensionnement et la prédiction des zones de défaillance.</p>
+          <div class="project-tech">
+            <span>ANSYS</span><span>SolidWorks</span><span>MATLAB</span><span>MEF</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-small">Rapport PDF</a>
+            <a href="#" class="btn-small btn-ghost">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <h3>Conception d'un Système de Transmission</h3>
+          <p>Conception complète d'un réducteur de vitesse deux étages sous CATIA V5. Calcul de dimensionnement des engrenages, roulements et arbres. Mise en plan et dossier technique complet.</p>
+          <div class="project-tech">
+            <span>CATIA V5</span><span>Calcul de résistance</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-small btn-ghost">Voir le projet</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <h3>Simulation Thermique d'un Échangeur de Chaleur</h3>
+          <p>Modélisation CFD d'un échangeur thermique à plaques sous ANSYS Fluent. Optimisation des paramètres géométriques pour maximiser le transfert de chaleur tout en minimisant les pertes de charge.</p>
+          <div class="project-tech">
+            <span>ANSYS Fluent</span><span>CFD</span><span>Thermique</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-small btn-ghost">Voir le projet</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <h3>Analyse Modale d'une Structure Mécanique</h3>
+          <p>Étude des fréquences propres et modes de vibration d'un bras robotique sous Abaqus. Identification des zones critiques et proposition de modifications structurelles pour éviter la résonance.</p>
+          <div class="project-tech">
+            <span>Abaqus</span><span>Dynamique</span><span>Vibrations</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-small btn-ghost">Voir le projet</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <h3>Script MATLAB pour l'Analyse de Fatigue</h3>
+          <p>Développement d'un outil MATLAB automatisant le calcul de la durée de vie en fatigue selon la norme EN 1993. Visualisation des courbes S-N et génération automatique de rapports PDF.</p>
+          <div class="project-tech">
+            <span>MATLAB</span><span>Fatigue</span><span>Automatisation</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-small btn-ghost">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section class="section section-dark" id="publications">
+    <div class="container">
+      <div class="section-label reveal">06 — Publications</div>
+      <h2 class="section-title reveal">Publications & communications</h2>
+      <div class="publications-list">
+
+        <div class="pub-item reveal">
+          <div class="pub-year">2023</div>
+          <div class="pub-content">
+            <h3>Analyse par Éléments Finis des Conduites sous Pression : Cas d'Application Industrielle</h3>
+            <p class="pub-venue">Mémoire de Projet de Fin d'Études — ENIT, Tunis</p>
+            <p>Étude complète de la tenue mécanique des conduites industrielles soumises à des charges internes et thermiques, avec propositions d'optimisation dimensionnelle.</p>
+            <a href="cv.pdf" download class="btn-small">Télécharger</a>
+          </div>
+        </div>
+
+        <div class="pub-item reveal pub-placeholder">
+          <div class="pub-year">—</div>
+          <div class="pub-content">
+            <h3>Prochaines publications en cours de préparation</h3>
+            <p class="pub-venue">Conférence ou revue indexée — à venir</p>
+            <p>Des travaux de recherche sont actuellement en cours. Les publications seront ajoutées dès leur acceptation.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-label reveal">07 — Contact</div>
+      <div class="contact-wrapper">
+        <div class="contact-left reveal">
+          <h2 class="section-title">Travaillons<br />ensemble</h2>
+          <p>Je suis ouvert aux opportunités d'emploi, de stage, ou de collaboration sur des projets en ingénierie mécanique. N'hésitez pas à me contacter.</p>
+          <div class="contact-info">
+            <a href="mailto:Wala.benali@email.com" class="contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              Wala.benali@email.com
+            </a>
+            <a href="tel:+21600000000" class="contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +216 00 000 000
+            </a>
+            <a href="https://linkedin.com/in/votre-profil" target="_blank" class="contact-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              linkedin.com/in/votre-profil
+            </a>
+          </div>
+          <a href="cv.pdf" download class="btn-primary btn-download">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Télécharger mon CV
+          </a>
+        </div>
+        <div class="contact-right reveal">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Objet</label>
+              <input type="text" id="subject" name="subject" placeholder="Objet de votre message" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">Envoyer le message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p>© 2024 Wala Yousfi — Technicien en  Génie Mécanique</p>
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/votre-profil" target="_blank" aria-label="LinkedIn" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/votre-profil" target="_blank" aria-label="GitHub" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="mailto:walausfi@gmail.com" aria-label="Email" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
