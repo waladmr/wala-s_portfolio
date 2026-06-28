@@ -748,7 +748,159 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; line-height
   box-shadow: 0 0 0 3px rgba(45,107,228,0.1);
 }
 .form-group input::placeholder, .form-group textarea::placeholder { color: var(--text-muted); }
-
+/* === CERTIFICATS === */
+.cert-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.cert-filter {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 24px;
+  border: 1.5px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.cert-filter:hover { border-color: var(--blue-accent); color: var(--blue-accent); }
+.cert-filter.active { background: var(--blue-accent); color: var(--white); border-color: var(--blue-accent); }
+ 
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+ 
+.cert-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+.cert-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue-accent), var(--blue-bright));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cert-card:hover { box-shadow: var(--shadow-md); transform: translateY(-5px); border-color: rgba(45,107,228,0.25); }
+.cert-card:hover::before { transform: scaleX(1); }
+ 
+.cert-card.hidden { display: none; }
+ 
+.cert-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+ 
+/* Logos colorés par organisme */
+.cert-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+  flex-shrink: 0;
+  letter-spacing: 0.03em;
+}
+.cert-logo--sw      { background: linear-gradient(135deg, #E84444, #C02020); }
+.cert-logo--ansys   { background: linear-gradient(135deg, #FFB800, #E09000); }
+.cert-logo--coursera{ background: linear-gradient(135deg, #0056D2, #003B96); }
+.cert-logo--catia   { background: linear-gradient(135deg, #005386, #003060); }
+.cert-logo--pmi     { background: linear-gradient(135deg, #00A651, #007A3C); }
+.cert-logo--python  { background: linear-gradient(135deg, #306998, #FFD43B); }
+ 
+.cert-meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.cert-org {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.cert-date {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+ 
+.cert-badge-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--blue-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.cert-badge-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--blue-accent);
+}
+ 
+.cert-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--blue-deep);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.cert-card p {
+  font-size: 13px;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+ 
+.cert-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+.cert-id {
+  font-family: var(--font-display);
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cert-verify { flex-shrink: 0; }
+ 
+@media (max-width: 600px) {
+  .cert-grid { grid-template-columns: 1fr; }
+  .cert-filters { gap: 8px; }
+  .cert-filter { font-size: 12px; padding: 6px 14px; }
+}
 /* === FOOTER === */
 .footer {
   background: var(--blue-deep);
