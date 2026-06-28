@@ -347,7 +347,152 @@
       </div>
     </div>
   </section>
-
+ <!-- CERTIFICATS -->
+  <section class="section" id="certificats">
+    <div class="container">
+      <div class="section-label reveal">07 — Certificats</div>
+      <h2 class="section-title reveal">Certifications & formations</h2>
+ 
+      <!-- Filtres par catégorie -->
+      <div class="cert-filters reveal">
+        <button class="cert-filter active" data-filter="all">Tous</button>
+        <button class="cert-filter" data-filter="cao">CAO / Conception</button>
+        <button class="cert-filter" data-filter="simulation">Simulation</button>
+        <button class="cert-filter" data-filter="programmation">Programmation</button>
+        <button class="cert-filter" data-filter="gestion">Gestion de projet</button>
+      </div>
+ 
+      <div class="cert-grid">
+ 
+        <!-- === MODÈLE D'UNE CARTE CERTIFICAT ===
+             Pour ajouter un certificat, copiez un bloc .cert-card et modifiez :
+             - data-category : cao | simulation | programmation | gestion
+             - .cert-logo : initiales de l'organisme
+             - .cert-org  : nom complet de l'organisme
+             - h3         : intitulé du certificat
+             - .cert-date : mois et année d'obtention
+             - .cert-id   : identifiant / numéro du certificat (optionnel)
+             - href du bouton : lien de vérification en ligne
+             ======================================= -->
+ 
+        <div class="cert-card reveal" data-category="cao">
+          <div class="cert-header">
+            <div class="cert-logo cert-logo--sw">SW</div>
+            <div class="cert-meta">
+              <span class="cert-org">Dassault Systèmes</span>
+              <span class="cert-date">Juin 2023</span>
+            </div>
+            <div class="cert-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+          </div>
+          <h3>SolidWorks Certified Associate (CSWA)</h3>
+          <p>Conception 3D, assemblages, mise en plan et simulation de base sous SolidWorks.</p>
+          <div class="cert-footer">
+            <span class="cert-id">ID : C-XXXXXX-XXXXXX</span>
+            <a href="#" target="_blank" class="btn-small btn-ghost cert-verify">Vérifier</a>
+          </div>
+        </div>
+ 
+        <div class="cert-card reveal" data-category="simulation">
+          <div class="cert-header">
+            <div class="cert-logo cert-logo--ansys">AN</div>
+            <div class="cert-meta">
+              <span class="cert-org">ANSYS Inc.</span>
+              <span class="cert-date">Mars 2023</span>
+            </div>
+            <div class="cert-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+          </div>
+          <h3>ANSYS Mechanical — Structural Simulation</h3>
+          <p>Analyse statique, dynamique et thermique par éléments finis sur ANSYS Mechanical.</p>
+          <div class="cert-footer">
+            <span class="cert-id">ID : ANS-MECH-2023-XXXX</span>
+            <a href="#" target="_blank" class="btn-small btn-ghost cert-verify">Vérifier</a>
+          </div>
+        </div>
+ 
+        <div class="cert-card reveal" data-category="programmation">
+          <div class="cert-header">
+            <div class="cert-logo cert-logo--coursera">Co</div>
+            <div class="cert-meta">
+              <span class="cert-org">Coursera — MathWorks</span>
+              <span class="cert-date">Janv. 2023</span>
+            </div>
+            <div class="cert-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+          </div>
+          <h3>MATLAB Fundamentals & Data Analysis</h3>
+          <p>Programmation MATLAB, traitement de données, visualisation et automatisation de calculs scientifiques.</p>
+          <div class="cert-footer">
+            <span class="cert-id">ID : XXXXXXXXXXXX</span>
+            <a href="#" target="_blank" class="btn-small btn-ghost cert-verify">Vérifier</a>
+          </div>
+        </div>
+ 
+        <div class="cert-card reveal" data-category="cao">
+          <div class="cert-header">
+            <div class="cert-logo cert-logo--catia">CA</div>
+            <div class="cert-meta">
+              <span class="cert-org">Dassault Systèmes</span>
+              <span class="cert-date">Déc. 2022</span>
+            </div>
+            <div class="cert-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+          </div>
+          <h3>CATIA V5 — Conception de Pièces & Assemblages</h3>
+          <p>Modélisation paramétrique de pièces, gestion d'assemblages complexes et mise en plan sous CATIA V5.</p>
+          <div class="cert-footer">
+            <span class="cert-id">ID : CAT-V5-XXXX-XXXX</span>
+            <a href="#" target="_blank" class="btn-small btn-ghost cert-verify">Vérifier</a>
+          </div>
+        </div>
+ 
+        <div class="cert-card reveal" data-category="gestion">
+          <div class="cert-header">
+            <div class="cert-logo cert-logo--pmi">PM</div>
+            <div class="cert-meta">
+              <span class="cert-org">PMI / Coursera</span>
+              <span class="cert-date">Oct. 2022</span>
+            </div>
+            <div class="cert-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+          </div>
+          <h3>Foundations of Project Management</h3>
+          <p>Introduction à la gestion de projet : cycle de vie, parties prenantes, planification et méthodes agiles.</p>
+          <div class="cert-footer">
+            <span class="cert-id">ID : XXXXXXXXXXXX</span>
+            <a href="#" target="_blank" class="btn-small btn-ghost cert-verify">Vérifier</a>
+          </div>
+        </div>
+ 
+        <div class="cert-card reveal" data-category="programmation">
+          <div class="cert-header">
+            <div class="cert-logo cert-logo--python">Py</div>
+            <div class="cert-meta">
+              <span class="cert-org">Udemy</span>
+              <span class="cert-date">Août 2022</span>
+            </div>
+            <div class="cert-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+          </div>
+          <h3>Python pour l'Ingénierie & le Calcul Scientifique</h3>
+          <p>NumPy, SciPy, Matplotlib et pandas appliqués à la résolution de problèmes d'ingénierie mécanique.</p>
+          <div class="cert-footer">
+            <span class="cert-id">ID : UC-XXXXXXXX</span>
+            <a href="#" target="_blank" class="btn-small btn-ghost cert-verify">Vérifier</a>
+          </div>
+        </div>
+ 
+      </div><!-- .cert-grid -->
+    </div>
+  </section>
+ 
   <!-- CONTACT -->
   <section class="section" id="contact">
     <div class="container">
