@@ -178,7 +178,28 @@ if (contactForm) {
   });
 }
 
-// === SMOOTH ACTIVE NAV HIGHLIGHTING ===
+// === CERTIFICATS — FILTRES ===
+const certFilters = document.querySelectorAll('.cert-filter');
+const certCards   = document.querySelectorAll('.cert-card');
+
+certFilters.forEach(btn => {
+  btn.addEventListener('click', () => {
+    certFilters.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    certCards.forEach(card => {
+      const match = filter === 'all' || card.dataset.category === filter;
+      card.classList.toggle('hidden', !match);
+      // Re-trigger reveal animation
+      if (match) {
+        card.classList.remove('visible');
+        requestAnimationFrame(() => {
+          setTimeout(() => card.classList.add('visible'), 50);
+        });
+      }
+    });
+  });
+});
 const sections = document.querySelectorAll('section[id]');
 const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
 
